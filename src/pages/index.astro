@@ -152,6 +152,11 @@ if('IntersectionObserver' in window){
 @media (max-width:430px){.photos button,.photos button:first-child{aspect-ratio:1.12!important}.photos button:first-child{aspect-ratio:1.55!important}.photos span{font-size:14px!important}}
 </style>
 <style is:global>
+/* Keep public images rooted after Astro extracts CSS into /_astro/. */
+.location{background-image:linear-gradient(90deg,#282b19f5,#292e1bd9 52%,#282b1999),url('/img/fachada.webp')!important}
+.intro::before,#historia::before,.kitchen::before,header.fixed-name::before{background-image:url('/img/fideos-patron.webp')!important}
+</style>
+<style is:global>
 header.fixed-name.is-scrolled{padding:13px 0;box-shadow:0 8px 28px rgba(67,41,30,.16),0 1px 0 rgba(120,96,59,.3);background-color:rgba(250,243,223,.58);-webkit-backdrop-filter:blur(12px) saturate(1.12);backdrop-filter:blur(12px) saturate(1.12);border-bottom:1px solid rgba(120,96,59,.28)}
 html.scrolled .fixed-name{padding:13px 0;box-shadow:0 8px 28px rgba(67,41,30,.16),0 1px 0 rgba(120,96,59,.3);background-color:rgba(250,243,223,.58);-webkit-backdrop-filter:blur(12px) saturate(1.12);backdrop-filter:blur(12px) saturate(1.12);border-bottom:1px solid rgba(120,96,59,.28)}
 html.scrolled .fixed-name h1{font-size:27px}
