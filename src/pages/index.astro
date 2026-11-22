@@ -186,3 +186,10 @@ html body .section-lead,html body .platelabel,html body .platebar,html body .pho
 html body nav,html body button,html body .cta,html body .actions a,html body .delivery{font-family:var(--font-body)!important;font-weight:600}
 html body nav{font-weight:500}
 </style>
+<style is:global>
+header.fixed-name{position:fixed!important;top:0!important;right:0!important;left:0!important;z-index:1000!important;width:100%;transform:translateZ(0);overflow:visible}
+header.fixed-name h1{margin:0!important;line-height:1.08!important;text-align:center}
+header.fixed-name.is-scrolled,html.scrolled header.fixed-name{min-height:56px;padding:10px 12px!important;display:grid;place-items:center}
+header.fixed-name.is-scrolled h1,html.scrolled header.fixed-name h1{font-size:clamp(22px,6vw,27px)!important;line-height:1.08!important;white-space:nowrap}
+@media (max-width:720px){header.fixed-name.is-scrolled,html.scrolled header.fixed-name{padding:10px 12px!important;min-height:54px}header.fixed-name.is-scrolled h1,html.scrolled header.fixed-name h1{font-size:clamp(20px,6.2vw,25px)!important}}
+</style>
