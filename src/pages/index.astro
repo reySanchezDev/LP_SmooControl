@@ -213,3 +213,14 @@ header.fixed-name.is-scrolled h1,html.scrolled header.fixed-name h1{font-size:cl
 @media (max-width:720px){header.fixed-name{gap:10px;padding:14px 16px!important}header.fixed-name h1{font-size:clamp(30px,8vw,40px)!important;line-height:.9!important}.title-space{height:calc(32px + 2.16 * clamp(30px,8vw,40px))!important}#header-estado{font-size:clamp(12px,3.5vw,15px)}header.fixed-name.is-scrolled,html.scrolled header.fixed-name{min-height:54px;padding:10px 12px!important}header.fixed-name.is-scrolled h1,html.scrolled header.fixed-name h1{font-size:clamp(23px,7vw,29px)!important}}
 @media (max-width:380px){header.fixed-name{gap:7px;padding-inline:10px!important}header.fixed-name h1{font-size:30px!important}#header-estado{font-size:11px}}
 </style>
+<style is:global>
+html,body{width:100%;min-width:0;overflow-x:hidden}
+header.fixed-name::before{background:none!important;opacity:0!important}
+header.fixed-name{width:100vw!important;height:158px!important}
+.title-space{height:158px!important}
+.intro.wrap{width:100%!important;max-width:none!important;margin-inline:0!important;padding-inline:16px!important}
+.intro.wrap::before{width:100vw!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important}
+header.fixed-name.is-scrolled,html.scrolled header.fixed-name{height:58px!important}
+@media (max-width:720px){header.fixed-name{height:100px!important}.title-space{height:100px!important}.intro.wrap{padding-inline:16px!important}header.fixed-name.is-scrolled,html.scrolled header.fixed-name{height:54px!important}}
+@media (max-width:380px){header.fixed-name{height:90px!important}.title-space{height:90px!important}}
+</style>
