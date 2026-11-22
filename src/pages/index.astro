@@ -86,6 +86,8 @@ reducedMotion.addEventListener('change',syncRotation);document.addEventListener(
 const fotos=[['fachada','Una noche en Nindirí'],['enchilada','La enchilada'],['cacao','Cacao con hielo'],['nachos','Nachos para compartir'],['tacos-mesa','Tacos a la mesa']];let current=0;
 function showPhoto(i){current=(i+fotos.length)%fotos.length;const [file,label]=fotos[current];large.src='img/'+file+'.webp';if(!reducedMotion.matches)large.animate([{opacity:.35},{opacity:1}],{duration:320});large.alt=caption.textContent=label}
 fotos.forEach(([file,label],i)=>{const b=document.createElement('button');b.innerHTML='<img loading="lazy" alt="" src="img/'+file+'.webp"><span>'+label+'</span>';b.onclick=()=>{showPhoto(i);viewer.showModal()};document.querySelector('.photos').append(b)});
+const tiktokItem=document.querySelector('.social-tiktok')?.closest('.social-item');
+if(tiktokItem){const tiktokLink=document.createElement('a');tiktokLink.className='social-link';tiktokLink.href='https://www.tiktok.com/@sazonsheyla?is_from_webapp=1&sender_device=pc';tiktokLink.target='_blank';tiktokLink.rel='noopener noreferrer';while(tiktokItem.firstChild)tiktokLink.append(tiktokItem.firstChild);tiktokItem.append(tiktokLink)}
 cerrar.onclick=()=>viewer.close();prevPhoto.onclick=()=>showPhoto(current-1);nextPhoto.onclick=()=>showPhoto(current+1);viewer.onkeydown=e=>{if(e.key==='ArrowRight')showPhoto(current+1);if(e.key==='ArrowLeft')showPhoto(current-1)};
 
 
@@ -185,6 +187,7 @@ html body h1 i{font-family:var(--font-display)!important;font-style:italic;font-
 html body .section-lead,html body .platelabel,html body .platebar,html body .photos span{font-family:var(--font-display)!important;font-style:italic;font-weight:400}
 html body nav,html body button,html body .cta,html body .actions a,html body .delivery{font-family:var(--font-body)!important;font-weight:600}
 html body nav{font-weight:500}
+.social-link{display:contents}
 </style>
 <style is:global>
 header.fixed-name{position:fixed!important;top:0!important;right:0!important;left:0!important;z-index:1000!important;width:100%;transform:translateZ(0);overflow:visible}
