@@ -75,6 +75,7 @@ function syncTitle(){
   title?.classList.toggle('is-scrolled',isScrolled);
 }
 syncTitle();window.addEventListener('scroll',syncTitle,{passive:true});window.addEventListener('pageshow',syncTitle);
+const headerStatus=document.createElement('span');headerStatus.id='header-estado';headerStatus.setAttribute('role','status');document.querySelector('.fixed-name')?.append(headerStatus);
 
 
 
@@ -88,6 +89,8 @@ function showPhoto(i){current=(i+fotos.length)%fotos.length;const [file,label]=f
 fotos.forEach(([file,label],i)=>{const b=document.createElement('button');b.innerHTML='<img loading="lazy" alt="" src="img/'+file+'.webp"><span>'+label+'</span>';b.onclick=()=>{showPhoto(i);viewer.showModal()};document.querySelector('.photos').append(b)});
 const tiktokItem=document.querySelector('.social-tiktok')?.closest('.social-item');
 if(tiktokItem){const tiktokLink=document.createElement('a');tiktokLink.className='social-link';tiktokLink.href='https://www.tiktok.com/@sazonsheyla?is_from_webapp=1&sender_device=pc';tiktokLink.target='_blank';tiktokLink.rel='noopener noreferrer';while(tiktokItem.firstChild)tiktokLink.append(tiktokItem.firstChild);tiktokItem.append(tiktokLink)}
+const whatsappItem=document.querySelector('.social-whatsapp')?.closest('.social-item');
+if(whatsappItem){const whatsappLink=document.createElement('a');whatsappLink.className='social-link';whatsappLink.href='https://wa.me/50577765119';whatsappLink.target='_blank';whatsappLink.rel='noopener noreferrer';while(whatsappItem.firstChild)whatsappLink.append(whatsappItem.firstChild);whatsappItem.append(whatsappLink)}
 cerrar.onclick=()=>viewer.close();prevPhoto.onclick=()=>showPhoto(current-1);nextPhoto.onclick=()=>showPhoto(current+1);viewer.onkeydown=e=>{if(e.key==='ArrowRight')showPhoto(current+1);if(e.key==='ArrowLeft')showPhoto(current-1)};
 
 
@@ -125,7 +128,7 @@ function statusAt(now){
   if(hour>=closeHour)return 'Cerrado · Abre mañana a las 10 a. m.';
   return 'Abierto · Hasta las '+(closeHour-12)+' p. m.';
 }
-function updateStatus(){const badge=document.getElementById('estado');const value=statusAt(new Date());if(badge.textContent!==value)badge.textContent=value;badge.dataset.open=String(value.startsWith('Abierto'))}
+function updateStatus(){const badge=document.getElementById('estado');const value=statusAt(new Date());if(badge.textContent!==value)badge.textContent=value;badge.dataset.open=String(value.startsWith('Abierto'));headerStatus.textContent=value;headerStatus.dataset.open=String(value.startsWith('Abierto'))}
 updateStatus();setInterval(updateStatus,15000);document.addEventListener('visibilitychange',updateStatus);
 const orderButton=document.querySelector('a.delivery');
 if('IntersectionObserver' in window){
@@ -196,4 +199,17 @@ header.fixed-name.is-scrolled,html.scrolled header.fixed-name{min-height:56px;pa
 header.fixed-name.is-scrolled h1,html.scrolled header.fixed-name h1{font-size:clamp(25px,7vw,32px)!important;line-height:1.08!important;white-space:nowrap}
 .title-space{height:calc(63px + 2.16 * clamp(70px,7.8vw,124px))!important}
 @media (max-width:720px){header.fixed-name.is-scrolled,html.scrolled header.fixed-name{padding:10px 12px!important;min-height:54px}header.fixed-name.is-scrolled h1,html.scrolled header.fixed-name h1{font-size:clamp(23px,7vw,29px)!important}.title-space{height:calc(45px + 2.16 * clamp(63px,14vw,90px))!important}}
+</style>
+<style is:global>
+.intro #estado{display:none!important}
+header.fixed-name{display:flex!important;align-items:center;justify-content:space-between;text-align:left!important;gap:20px;padding:20px clamp(16px,5vw,72px)!important;min-height:0;background-color:rgba(250,243,223,.78)!important;-webkit-backdrop-filter:blur(10px) saturate(1.08);backdrop-filter:blur(10px) saturate(1.08);box-shadow:0 6px 24px rgba(67,41,30,.12);border-bottom:1px solid rgba(120,96,59,.24)}
+header.fixed-name h1{flex:1 1 auto;text-align:left!important;font-size:clamp(34px,4.8vw,64px)!important;line-height:.92!important;letter-spacing:-.045em!important}
+#header-estado{flex:0 0 auto;margin-left:auto;color:#80952f;font:500 clamp(14px,1.5vw,18px)/1.2 var(--font-body);white-space:nowrap;text-align:right}
+#header-estado[data-open=true]{color:#80952f}
+#header-estado[data-open=false]{color:#718044}
+.title-space{height:calc(40px + 2.16 * clamp(34px,4.8vw,64px))!important}
+header.fixed-name.is-scrolled,html.scrolled header.fixed-name{min-height:58px;padding:10px clamp(16px,5vw,72px)!important;background-color:rgba(250,243,223,.58)!important}
+header.fixed-name.is-scrolled h1,html.scrolled header.fixed-name h1{font-size:clamp(25px,7vw,32px)!important;line-height:1!important;white-space:nowrap}
+@media (max-width:720px){header.fixed-name{gap:10px;padding:14px 16px!important}header.fixed-name h1{font-size:clamp(30px,8vw,40px)!important;line-height:.9!important}.title-space{height:calc(32px + 2.16 * clamp(30px,8vw,40px))!important}#header-estado{font-size:clamp(12px,3.5vw,15px)}header.fixed-name.is-scrolled,html.scrolled header.fixed-name{min-height:54px;padding:10px 12px!important}header.fixed-name.is-scrolled h1,html.scrolled header.fixed-name h1{font-size:clamp(23px,7vw,29px)!important}}
+@media (max-width:380px){header.fixed-name{gap:7px;padding-inline:10px!important}header.fixed-name h1{font-size:30px!important}#header-estado{font-size:11px}}
 </style>
