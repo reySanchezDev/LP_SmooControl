@@ -176,3 +176,13 @@ html.scrolled .fixed-name::before,header.fixed-name.is-scrolled::before{opacity:
 @media (max-width:720px){.photos{gap:10px}.photos button,.photos button:first-child{aspect-ratio:1.22}.photos button:first-child{aspect-ratio:1.7}.photos span{font-size:16px;padding:24px 9px 8px}}
 @media (max-width:430px){.photos button,.photos button:first-child{aspect-ratio:1.12}.photos button:first-child{aspect-ratio:1.55}.photos span{font-size:14px}}
 </style>
+<style is:global>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap');
+:root{--font-display:'Cormorant Garamond',Georgia,serif;--font-body:'Manrope',system-ui,sans-serif}
+html body{font-family:var(--font-body)!important;font-weight:400}
+html body h1,html body h2,html body h3,html body .section-title{font-family:var(--font-display)!important;font-weight:500}
+html body h1 i{font-family:var(--font-display)!important;font-style:italic;font-weight:500}
+html body .section-lead,html body .platelabel,html body .platebar,html body .photos span{font-family:var(--font-display)!important;font-style:italic;font-weight:400}
+html body nav,html body button,html body .cta,html body .actions a,html body .delivery{font-family:var(--font-body)!important;font-weight:600}
+html body nav{font-weight:500}
+</style>
