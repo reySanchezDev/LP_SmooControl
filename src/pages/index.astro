@@ -172,11 +172,15 @@ function syncManifestRotation(){
 }
 function renderManifestGallery(images){
   if(!Array.isArray(images)||!images.length)return;
-  manifestSlides=images.map((image,index)=>{
+  const heroImages=images.filter((image)=>!['fachada.webp','enchilada.webp','nachos.webp','tacos.webp'].includes(image.name.toLowerCase()));
+  const slidesSource=heroImages.length?heroImages:images;
+  manifestSlides=slidesSource.map((image,index)=>{
     const slide=document.createElement('div');
-    slide.className='presentation'+(index===0?' on':'');
+    slide.className='presentation'+(index===0?' on':'')+(image.name.toLowerCase()==='cacao.webp'?' drink':'');
+    slide.style.position='absolute';slide.style.inset='0';
     const photo=document.createElement('img');
     photo.className='product';photo.loading=index===0?'eager':'lazy';photo.alt=image.label;photo.src=image.src;
+    photo.style.position='absolute';photo.style.inset='0';photo.style.width='100%';photo.style.height='100%';photo.style.objectFit='contain';
     slide.append(photo);return slide;
   });
   manifestGallery.replaceChildren(...manifestSlides);manifestGalleryIndex=0;syncManifestRotation();
