@@ -6,8 +6,8 @@
     "node": ">=22.23.4"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "node scripts/generate-image-manifest.mjs && astro dev",
+    "build": "node scripts/generate-image-manifest.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

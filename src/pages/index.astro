@@ -152,6 +152,63 @@ if('IntersectionObserver' in window){
   new IntersectionObserver(([entry])=>{socialVisible=entry.isIntersecting;syncSocial()},{threshold:.15}).observe(socialSection);
   document.addEventListener('visibilitychange',syncSocial);
 }
+
+// Discover every managed image generated into public/img at build time.
+const manifestGallery=document.querySelector('.plates');
+const manifestPhotos=document.querySelector('.photos');
+let manifestSlides=[];
+let manifestGalleryIndex=0;
+let manifestTimer;
+let dynamicPhotos=[];
+function manifestAdvance(){
+  if(manifestSlides.length<2)return;
+  manifestSlides[manifestGalleryIndex]?.classList.remove('on');
+  manifestGalleryIndex=(manifestGalleryIndex+1)%manifestSlides.length;
+  manifestSlides[manifestGalleryIndex]?.classList.add('on');
+}
+function syncManifestRotation(){
+  clearInterval(manifestTimer);
+  if(manifestSlides.length>1&&!reducedMotion.matches&&!document.hidden)manifestTimer=setInterval(manifestAdvance,4500);
+}
+function renderManifestGallery(images){
+  if(!Array.isArray(images)||!images.length)return;
+  manifestSlides=images.map((image,index)=>{
+    const slide=document.createElement('div');
+    slide.className='presentation'+(index===0?' on':'');
+    const photo=document.createElement('img');
+    photo.className='product';photo.loading=index===0?'eager':'lazy';photo.alt=image.label;photo.src=image.src;
+    slide.append(photo);return slide;
+  });
+  manifestGallery.replaceChildren(...manifestSlides);manifestGalleryIndex=0;syncManifestRotation();
+  dynamicPhotos=images;
+  manifestPhotos.replaceChildren();
+  dynamicPhotos.forEach((image,index)=>{
+    const button=document.createElement('button');
+    button.innerHTML=`<img loading="lazy" alt="" src="${image.src}"><span>${image.label}</span>`;
+    button.onclick=()=>{showManifestPhoto(index);viewer.showModal()};
+    manifestPhotos.append(button);
+  });
+}
+function showManifestPhoto(index){
+  if(!dynamicPhotos.length)return;
+  const item=dynamicPhotos[(index+dynamicPhotos.length)%dynamicPhotos.length];
+  current=(index+dynamicPhotos.length)%dynamicPhotos.length;
+  large.src=item.src;large.alt=caption.textContent=item.label;
+}
+async function loadImageManifest(){
+  try{
+    const response=await fetch('/img-manifest.json',{cache:'no-store'});
+    if(!response.ok)throw new Error('manifest unavailable');
+    const images=await response.json();
+    if(!images.length)return;
+    renderManifestGallery(images);
+    prevPhoto.onclick=()=>showManifestPhoto(current-1);
+    nextPhoto.onclick=()=>showManifestPhoto(current+1);
+  }catch(error){console.warn('Using bundled image carousel fallback',error)}
+}
+reducedMotion.addEventListener('change',syncManifestRotation);
+document.addEventListener('visibilitychange',syncManifestRotation);
+loadImageManifest();
 </script></html>
 
 <style>

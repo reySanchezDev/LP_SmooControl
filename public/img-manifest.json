@@ -1,0 +1,42 @@
+[
+  {
+    "name": "cacao.webp",
+    "src": "/img/cacao.webp",
+    "label": "Cacao"
+  },
+  {
+    "name": "enchilada-mesa.webp",
+    "src": "/img/enchilada-mesa.webp",
+    "label": "Enchilada Mesa"
+  },
+  {
+    "name": "enchilada.webp",
+    "src": "/img/enchilada.webp",
+    "label": "Enchilada"
+  },
+  {
+    "name": "fachada.webp",
+    "src": "/img/fachada.webp",
+    "label": "Fachada"
+  },
+  {
+    "name": "nachos-mesa.webp",
+    "src": "/img/nachos-mesa.webp",
+    "label": "Nachos Mesa"
+  },
+  {
+    "name": "nachos.webp",
+    "src": "/img/nachos.webp",
+    "label": "Nachos"
+  },
+  {
+    "name": "tacos-mesa.webp",
+    "src": "/img/tacos-mesa.webp",
+    "label": "Tacos Mesa"
+  },
+  {
+    "name": "tacos.webp",
+    "src": "/img/tacos.webp",
+    "label": "Tacos"
+  }
+]
