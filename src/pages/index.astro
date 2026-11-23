@@ -74,8 +74,8 @@ function syncTitle(){
   root.classList.toggle('scrolled',isScrolled);
   title?.classList.toggle('is-scrolled',isScrolled);
 }
-const siteIcon=document.createElement('link');siteIcon.rel='icon';siteIcon.type='image/png';siteIcon.href='/assets/originales/logo.png?v=20261123';document.head.append(siteIcon);
-const touchIcon=document.createElement('link');touchIcon.rel='apple-touch-icon';touchIcon.href='/assets/originales/logo.png?v=20261123';document.head.append(touchIcon);
+const siteIcon=document.createElement('link');siteIcon.rel='icon';siteIcon.type='image/png';siteIcon.href='/kivo-favicon.png?v=20261123';document.head.append(siteIcon);
+const touchIcon=document.createElement('link');touchIcon.rel='apple-touch-icon';touchIcon.href='/kivo-favicon.png?v=20261123';document.head.append(touchIcon);
 syncTitle();window.addEventListener('scroll',syncTitle,{passive:true});window.addEventListener('pageshow',syncTitle);
 document.querySelector('.maplink')?.setAttribute('href','https://maps.app.goo.gl/2nkLaP2NGRNkeiRW9');
 const headerStatus=document.createElement('span');headerStatus.id='header-estado';headerStatus.setAttribute('role','status');document.querySelector('.fixed-name')?.append(headerStatus);
