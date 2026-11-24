@@ -368,3 +368,63 @@ html.scrolled header.fixed-name h1 i{
 }
 #header-estado{font-weight:700!important}
 </style>
+<style is:global>
+/* Desktop distribution follows the current hensell.dev layout tokens. */
+:root{
+  --hensell-shell-max:1220px;
+  --hensell-content-max:1080px;
+  --hensell-reading-max:720px;
+  --hensell-panel-max:680px;
+  --hensell-showcase-max:860px;
+  --hensell-gutter:clamp(14px,3.5vw,56px);
+}
+
+@media (min-width:721px){
+  .wrap{
+    width:min(var(--hensell-content-max),calc(100% - (2 * var(--hensell-gutter))))!important;
+    max-width:var(--hensell-content-max)!important;
+    margin-inline:auto!important;
+  }
+
+  .intro.wrap,
+  .story.wrap,
+  .kitchen.wrap{
+    width:min(var(--hensell-content-max),calc(100% - (2 * var(--hensell-gutter))))!important;
+    max-width:var(--hensell-content-max)!important;
+    margin-inline:auto!important;
+  }
+
+  .location,
+  .album,
+  .social-section{
+    width:min(var(--hensell-shell-max),calc(100% - (2 * var(--hensell-gutter))))!important;
+    max-width:var(--hensell-shell-max)!important;
+    margin-inline:auto!important;
+  }
+
+  .location .wrap,
+  .album .wrap,
+  .social-section .wrap{
+    width:min(var(--hensell-content-max),100%)!important;
+    max-width:var(--hensell-content-max)!important;
+  }
+
+  .intro::before,
+  #historia::before,
+  .kitchen::before{
+    inset:0!important;
+  }
+
+  header.fixed-name{
+    width:min(var(--hensell-shell-max),calc(100% - (2 * var(--hensell-gutter))))!important;
+    left:50%!important;
+    right:auto!important;
+    transform:translateX(-50%) translateZ(0)!important;
+  }
+}
+
+@media (max-width:720px){
+  .wrap{width:calc(100% - 32px)!important;max-width:none!important}
+  .intro.wrap{width:100%!important;max-width:none!important}
+}
+</style>
