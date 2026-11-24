@@ -389,8 +389,8 @@ html.scrolled header.fixed-name h1 i{
   .intro.wrap,
   .story.wrap,
   .kitchen.wrap{
-    width:min(var(--hensell-content-max),calc(100% - (2 * var(--hensell-gutter))))!important;
-    max-width:var(--hensell-content-max)!important;
+    width:min(var(--hensell-shell-max),calc(100% - (2 * var(--hensell-gutter))))!important;
+    max-width:var(--hensell-shell-max)!important;
     margin-inline:auto!important;
   }
 
@@ -425,6 +425,38 @@ html.scrolled header.fixed-name h1 i{
   .intro .art{
     width:min(100%,340px)!important;
     margin-inline:auto!important;
+  }
+
+  .story,
+  .kitchen{
+    padding-inline:max(0px,calc((100% - var(--hensell-content-max)) / 2))!important;
+  }
+
+  .story{
+    grid-template-columns:1fr 1.1fr!important;
+    gap:8%!important;
+  }
+
+  .kitchen>div{
+    max-width:none!important;
+    display:grid!important;
+    grid-template-columns:1fr 1.1fr!important;
+    column-gap:8%!important;
+    align-items:start!important;
+  }
+
+  .kitchen h2{
+    grid-column:1;
+    grid-row:1;
+  }
+
+  .kitchen .section-lead{
+    grid-column:1;
+    grid-row:2;
+  }
+
+  .kitchen p:not(.section-lead){
+    grid-column:2;
   }
 
   header.fixed-name{
