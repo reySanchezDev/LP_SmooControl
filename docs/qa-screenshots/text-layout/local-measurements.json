@@ -1,0 +1,1698 @@
+{
+  "target": "http://localhost:4321/",
+  "measurements": [
+    {
+      "viewport": 390,
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "elements": {
+        "header.fixed-name": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 64,
+          "paddingLeft": "12px",
+          "paddingRight": "12px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 0,
+          "top": 64,
+          "width": 390,
+          "height": 341,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".location": {
+          "left": 0,
+          "top": 405,
+          "width": 390,
+          "height": 546.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story": {
+          "left": 16,
+          "top": 951.6875,
+          "width": 358,
+          "height": 594.796875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 16px"
+        },
+        ".kitchen": {
+          "left": 16,
+          "top": 1546.484375,
+          "width": 358,
+          "height": 464.421875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 16px"
+        },
+        ".album": {
+          "left": 0,
+          "top": 2010.90625,
+          "width": 390,
+          "height": 1053.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".social-section": {
+          "left": 0,
+          "top": 3064.59375,
+          "width": 390,
+          "height": 316.859375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:first-child": {
+          "left": 16,
+          "top": 1006.6875,
+          "width": 358,
+          "height": 102.328125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 16,
+          "top": 1133.015625,
+          "width": 358,
+          "height": 359.46875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 16,
+          "top": 1006.6875,
+          "width": 358,
+          "height": 41.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 38px / 41.04px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 16,
+          "top": 1063.71875,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 16,
+          "top": 1133.015625,
+          "width": 358,
+          "height": 158.0625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 16,
+          "top": 1308.078125,
+          "width": 358,
+          "height": 184.40625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 16,
+          "top": 1600.484375,
+          "width": 358,
+          "height": 356.421875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 16,
+          "top": 1600.484375,
+          "width": 358,
+          "height": 41.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 38px / 41.04px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 16,
+          "top": 1657.515625,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 16,
+          "top": 1702.8125,
+          "width": 358,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 16,
+          "top": 1825.1875,
+          "width": 358,
+          "height": 131.71875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    },
+    {
+      "viewport": 720,
+      "pageWidth": 720,
+      "scrollWidth": 720,
+      "elements": {
+        "header.fixed-name": {
+          "left": 0,
+          "top": 0,
+          "width": 720,
+          "height": 64,
+          "paddingLeft": "12px",
+          "paddingRight": "12px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 0,
+          "top": 64,
+          "width": 720,
+          "height": 389,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".location": {
+          "left": 0,
+          "top": 453,
+          "width": 720,
+          "height": 701.5625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story": {
+          "left": 16,
+          "top": 1154.5625,
+          "width": 688,
+          "height": 463.078125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 16px"
+        },
+        ".kitchen": {
+          "left": 16,
+          "top": 1617.640625,
+          "width": 688,
+          "height": 359.046875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 16px"
+        },
+        ".album": {
+          "left": 0,
+          "top": 1976.6875,
+          "width": 720,
+          "height": 1734.328125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".social-section": {
+          "left": 0,
+          "top": 3711.015625,
+          "width": 720,
+          "height": 345.640625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:first-child": {
+          "left": 16,
+          "top": 1209.5625,
+          "width": 688,
+          "height": 102.328125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 16,
+          "top": 1335.890625,
+          "width": 688,
+          "height": 227.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 16,
+          "top": 1209.5625,
+          "width": 688,
+          "height": 41.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 38px / 41.04px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 16,
+          "top": 1266.59375,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 16,
+          "top": 1335.890625,
+          "width": 601.453125,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 16,
+          "top": 1458.265625,
+          "width": 601.453125,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 16,
+          "top": 1671.640625,
+          "width": 688,
+          "height": 251.046875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 16,
+          "top": 1671.640625,
+          "width": 688,
+          "height": 41.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 38px / 41.04px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 16,
+          "top": 1728.671875,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 16,
+          "top": 1773.96875,
+          "width": 688,
+          "height": 52.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 16,
+          "top": 1843.65625,
+          "width": 688,
+          "height": 79.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    },
+    {
+      "viewport": 768,
+      "pageWidth": 768,
+      "scrollWidth": 768,
+      "elements": {
+        "header.fixed-name": {
+          "left": 26.8828125,
+          "top": 0,
+          "width": 714.234375,
+          "height": 64,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 26.875,
+          "top": 64,
+          "width": 714.234375,
+          "height": 419.4375,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 26.8906px 0px 26.875px"
+        },
+        ".location": {
+          "left": 26.875,
+          "top": 483.4375,
+          "width": 714.234375,
+          "height": 616.5,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 26.8906px 0px 26.875px"
+        },
+        ".story": {
+          "left": 26.875,
+          "top": 1099.9375,
+          "width": 714.234375,
+          "height": 465.171875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 26.8906px 0px 26.875px"
+        },
+        ".kitchen": {
+          "left": 26.875,
+          "top": 1565.109375,
+          "width": 714.234375,
+          "height": 385.140625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 26.8906px 0px 26.875px"
+        },
+        ".album": {
+          "left": 26.875,
+          "top": 1950.25,
+          "width": 714.234375,
+          "height": 1636.84375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 26.8906px 0px 26.875px"
+        },
+        ".social-section": {
+          "left": 26.875,
+          "top": 3587.09375,
+          "width": 714.234375,
+          "height": 356.546875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 26.8906px 0px 26.875px"
+        },
+        ".story>div:first-child": {
+          "left": 26.875,
+          "top": 1154.9375,
+          "width": 714.234375,
+          "height": 104.421875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 26.875,
+          "top": 1283.359375,
+          "width": 714.234375,
+          "height": 227.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 26.875,
+          "top": 1154.9375,
+          "width": 714.234375,
+          "height": 43.125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 39.936px / 43.1309px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 26.875,
+          "top": 1214.0625,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 26.875,
+          "top": 1283.359375,
+          "width": 601.453125,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 26.875,
+          "top": 1405.734375,
+          "width": 601.453125,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 26.875,
+          "top": 1619.109375,
+          "width": 714.234375,
+          "height": 277.140625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 26.875,
+          "top": 1619.109375,
+          "width": 714.234375,
+          "height": 43.125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 39.936px / 43.1309px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 26.875,
+          "top": 1678.234375,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 26.875,
+          "top": 1747.53125,
+          "width": 714.234375,
+          "height": 52.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 26.875,
+          "top": 1817.21875,
+          "width": 714.234375,
+          "height": 79.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    },
+    {
+      "viewport": 1000,
+      "pageWidth": 1000,
+      "scrollWidth": 1000,
+      "elements": {
+        "header.fixed-name": {
+          "left": 35,
+          "top": 0,
+          "width": 930,
+          "height": 64,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 35,
+          "top": 64,
+          "width": 930,
+          "height": 419.4375,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35px"
+        },
+        ".location": {
+          "left": 35,
+          "top": 483.4375,
+          "width": 930,
+          "height": 684.140625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35px"
+        },
+        ".story": {
+          "left": 35,
+          "top": 1167.578125,
+          "width": 930,
+          "height": 478.203125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35px"
+        },
+        ".kitchen": {
+          "left": 35,
+          "top": 1645.78125,
+          "width": 930,
+          "height": 371.828125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35px"
+        },
+        ".album": {
+          "left": 35,
+          "top": 2017.609375,
+          "width": 930,
+          "height": 2059.65625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35px"
+        },
+        ".social-section": {
+          "left": 35,
+          "top": 4077.265625,
+          "width": 930,
+          "height": 415.109375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35px"
+        },
+        ".story>div:first-child": {
+          "left": 35,
+          "top": 1222.578125,
+          "width": 930,
+          "height": 117.453125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 35,
+          "top": 1364.03125,
+          "width": 930,
+          "height": 227.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 35,
+          "top": 1222.578125,
+          "width": 930,
+          "height": 56.15625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 52px / 56.16px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 35,
+          "top": 1294.734375,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 35,
+          "top": 1364.03125,
+          "width": 601.453125,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 35,
+          "top": 1486.40625,
+          "width": 601.453125,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 35,
+          "top": 1699.78125,
+          "width": 930,
+          "height": 263.828125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 35,
+          "top": 1699.78125,
+          "width": 930,
+          "height": 56.15625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 52px / 56.16px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 35,
+          "top": 1771.9375,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 35,
+          "top": 1841.234375,
+          "width": 930,
+          "height": 52.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 35,
+          "top": 1910.921875,
+          "width": 930,
+          "height": 52.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    },
+    {
+      "viewport": 1001,
+      "pageWidth": 1001,
+      "scrollWidth": 1001,
+      "elements": {
+        "header.fixed-name": {
+          "left": 35.0390625,
+          "top": 0,
+          "width": 930.921875,
+          "height": 64,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 35.03125,
+          "top": 64,
+          "width": 930.921875,
+          "height": 419.4375,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35.0469px 0px 35.0312px"
+        },
+        ".location": {
+          "left": 35.03125,
+          "top": 483.4375,
+          "width": 930.921875,
+          "height": 684.328125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35.0469px 0px 35.0312px"
+        },
+        ".story": {
+          "left": 35.03125,
+          "top": 1167.765625,
+          "width": 930.921875,
+          "height": 451.78125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35.0469px 0px 35.0312px"
+        },
+        ".kitchen": {
+          "left": 35.03125,
+          "top": 1619.546875,
+          "width": 930.921875,
+          "height": 371.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35.0469px 0px 35.0312px"
+        },
+        ".album": {
+          "left": 35.03125,
+          "top": 1991.296875,
+          "width": 930.921875,
+          "height": 1008.203125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35.0469px 0px 35.0312px"
+        },
+        ".social-section": {
+          "left": 35.03125,
+          "top": 2999.5,
+          "width": 930.921875,
+          "height": 415.328125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 35.0469px 0px 35.0312px"
+        },
+        ".story>div:first-child": {
+          "left": 35.03125,
+          "top": 1240.765625,
+          "width": 407.828125,
+          "height": 117.5,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 517.328125,
+          "top": 1240.765625,
+          "width": 448.625,
+          "height": 306.78125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 35.03125,
+          "top": 1240.765625,
+          "width": 407.828125,
+          "height": 56.203125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 52.052px / 56.2162px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 35.03125,
+          "top": 1312.96875,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 517.328125,
+          "top": 1240.765625,
+          "width": 448.625,
+          "height": 131.71875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 517.328125,
+          "top": 1389.484375,
+          "width": 448.625,
+          "height": 158.0625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 35.03125,
+          "top": 1691.546875,
+          "width": 930.921875,
+          "height": 227.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 35.03125,
+          "top": 1691.546875,
+          "width": 407.828125,
+          "height": 56.203125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 52.052px / 56.2162px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 35.03125,
+          "top": 1763.75,
+          "width": 331.125,
+          "height": 27.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 21px / 27.3px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 517.328125,
+          "top": 1691.546875,
+          "width": 448.625,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 517.328125,
+          "top": 1813.921875,
+          "width": 448.625,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    },
+    {
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "scrollWidth": 1280,
+      "elements": {
+        "header.fixed-name": {
+          "left": 44.8046875,
+          "top": 0,
+          "width": 1190.390625,
+          "height": 64,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 44.796875,
+          "top": 64,
+          "width": 1190.390625,
+          "height": 419.4375,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 44.8125px 0px 44.7969px"
+        },
+        ".location": {
+          "left": 44.796875,
+          "top": 483.4375,
+          "width": 1190.390625,
+          "height": 739.578125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 44.8125px 0px 44.7969px"
+        },
+        ".story": {
+          "left": 44.796875,
+          "top": 1223.015625,
+          "width": 1190.390625,
+          "height": 399.09375,
+          "paddingLeft": "55.1875px",
+          "paddingRight": "55.1875px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 44.8125px 0px 44.7969px"
+        },
+        ".kitchen": {
+          "left": 44.796875,
+          "top": 1622.109375,
+          "width": 1190.390625,
+          "height": 345.40625,
+          "paddingLeft": "55.1875px",
+          "paddingRight": "55.1875px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 44.8125px 0px 44.7969px"
+        },
+        ".album": {
+          "left": 44.796875,
+          "top": 1967.515625,
+          "width": 1190.390625,
+          "height": 1023.875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 44.8125px 0px 44.7969px"
+        },
+        ".social-section": {
+          "left": 44.796875,
+          "top": 2991.390625,
+          "width": 1190.390625,
+          "height": 482.546875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 44.8125px 0px 44.7969px"
+        },
+        ".story>div:first-child": {
+          "left": 99.984375,
+          "top": 1296.015625,
+          "width": 473.140625,
+          "height": 139.140625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 659.515625,
+          "top": 1296.015625,
+          "width": 520.484375,
+          "height": 254.09375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 99.984375,
+          "top": 1296.015625,
+          "width": 473.140625,
+          "height": 71.875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 66.56px / 71.8848px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 99.984375,
+          "top": 1383.890625,
+          "width": 403.65625,
+          "height": 33.265625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 25.6px / 33.28px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 659.515625,
+          "top": 1296.015625,
+          "width": 520.484375,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 659.515625,
+          "top": 1418.390625,
+          "width": 520.484375,
+          "height": 131.71875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 99.984375,
+          "top": 1694.109375,
+          "width": 1080.015625,
+          "height": 201.40625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 99.984375,
+          "top": 1694.109375,
+          "width": 473.140625,
+          "height": 71.875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 66.56px / 71.8848px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 99.984375,
+          "top": 1781.984375,
+          "width": 403.65625,
+          "height": 33.265625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 25.6px / 33.28px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 659.515625,
+          "top": 1694.109375,
+          "width": 520.484375,
+          "height": 79.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 659.515625,
+          "top": 1790.140625,
+          "width": 520.484375,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    },
+    {
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "elements": {
+        "header.fixed-name": {
+          "left": 110,
+          "top": 0,
+          "width": 1220,
+          "height": 64,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 110,
+          "top": 64,
+          "width": 1220,
+          "height": 419.4375,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 110px"
+        },
+        ".location": {
+          "left": 110,
+          "top": 483.4375,
+          "width": 1220,
+          "height": 751.328125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 110px"
+        },
+        ".story": {
+          "left": 110,
+          "top": 1234.765625,
+          "width": 1220,
+          "height": 399.09375,
+          "paddingLeft": "70px",
+          "paddingRight": "70px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 110px"
+        },
+        ".kitchen": {
+          "left": 110,
+          "top": 1633.859375,
+          "width": 1220,
+          "height": 345.40625,
+          "paddingLeft": "70px",
+          "paddingRight": "70px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 110px"
+        },
+        ".album": {
+          "left": 110,
+          "top": 1979.265625,
+          "width": 1220,
+          "height": 1029.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 110px"
+        },
+        ".social-section": {
+          "left": 110,
+          "top": 3009.015625,
+          "width": 1220,
+          "height": 494.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 110px"
+        },
+        ".story>div:first-child": {
+          "left": 180,
+          "top": 1307.765625,
+          "width": 473.140625,
+          "height": 149.171875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 739.53125,
+          "top": 1307.765625,
+          "width": 520.46875,
+          "height": 254.09375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 180,
+          "top": 1307.765625,
+          "width": 473.140625,
+          "height": 77.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 72px / 77.76px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 180,
+          "top": 1401.515625,
+          "width": 454.109375,
+          "height": 37.421875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 28.8px / 37.44px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 739.53125,
+          "top": 1307.765625,
+          "width": 520.46875,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 739.53125,
+          "top": 1430.140625,
+          "width": 520.46875,
+          "height": 131.71875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 180,
+          "top": 1705.859375,
+          "width": 1080,
+          "height": 201.40625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 180,
+          "top": 1705.859375,
+          "width": 473.140625,
+          "height": 77.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 72px / 77.76px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 180,
+          "top": 1799.609375,
+          "width": 454.109375,
+          "height": 37.421875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 28.8px / 37.44px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 739.53125,
+          "top": 1705.859375,
+          "width": 520.46875,
+          "height": 79.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 739.53125,
+          "top": 1801.890625,
+          "width": 520.46875,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    },
+    {
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "scrollWidth": 1920,
+      "elements": {
+        "header.fixed-name": {
+          "left": 350,
+          "top": 0,
+          "width": 1220,
+          "height": 64,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 350,
+          "top": 64,
+          "width": 1220,
+          "height": 419.4375,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 350px"
+        },
+        ".location": {
+          "left": 350,
+          "top": 483.4375,
+          "width": 1220,
+          "height": 751.328125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 350px"
+        },
+        ".story": {
+          "left": 350,
+          "top": 1234.765625,
+          "width": 1220,
+          "height": 399.09375,
+          "paddingLeft": "70px",
+          "paddingRight": "70px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 350px"
+        },
+        ".kitchen": {
+          "left": 350,
+          "top": 1633.859375,
+          "width": 1220,
+          "height": 345.40625,
+          "paddingLeft": "70px",
+          "paddingRight": "70px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 350px"
+        },
+        ".album": {
+          "left": 350,
+          "top": 1979.265625,
+          "width": 1220,
+          "height": 1029.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 350px"
+        },
+        ".social-section": {
+          "left": 350,
+          "top": 3009.015625,
+          "width": 1220,
+          "height": 494.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 350px"
+        },
+        ".story>div:first-child": {
+          "left": 420,
+          "top": 1307.765625,
+          "width": 473.140625,
+          "height": 149.4375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 979.53125,
+          "top": 1307.765625,
+          "width": 520.46875,
+          "height": 254.09375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 420,
+          "top": 1307.765625,
+          "width": 473.140625,
+          "height": 77.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 72px / 77.76px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 420,
+          "top": 1401.515625,
+          "width": 457.265625,
+          "height": 37.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 29px / 37.7px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 979.53125,
+          "top": 1307.765625,
+          "width": 520.46875,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 979.53125,
+          "top": 1430.140625,
+          "width": 520.46875,
+          "height": 131.71875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 420,
+          "top": 1705.859375,
+          "width": 1080,
+          "height": 201.40625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 420,
+          "top": 1705.859375,
+          "width": 473.140625,
+          "height": 77.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 72px / 77.76px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 420,
+          "top": 1799.609375,
+          "width": 457.265625,
+          "height": 37.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 29px / 37.7px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 979.53125,
+          "top": 1705.859375,
+          "width": 520.46875,
+          "height": 79.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 979.53125,
+          "top": 1801.890625,
+          "width": 520.46875,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    },
+    {
+      "viewport": 2560,
+      "pageWidth": 2560,
+      "scrollWidth": 2560,
+      "elements": {
+        "header.fixed-name": {
+          "left": 670,
+          "top": 0,
+          "width": 1220,
+          "height": 64,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".intro": {
+          "left": 670,
+          "top": 64,
+          "width": 1220,
+          "height": 419.4375,
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 670px"
+        },
+        ".location": {
+          "left": 670,
+          "top": 483.4375,
+          "width": 1220,
+          "height": 751.328125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 670px"
+        },
+        ".story": {
+          "left": 670,
+          "top": 1234.765625,
+          "width": 1220,
+          "height": 399.09375,
+          "paddingLeft": "70px",
+          "paddingRight": "70px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 670px"
+        },
+        ".kitchen": {
+          "left": 670,
+          "top": 1633.859375,
+          "width": 1220,
+          "height": 345.40625,
+          "paddingLeft": "70px",
+          "paddingRight": "70px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 670px"
+        },
+        ".album": {
+          "left": 670,
+          "top": 1979.265625,
+          "width": 1220,
+          "height": 1029.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 670px"
+        },
+        ".social-section": {
+          "left": 670,
+          "top": 3009.015625,
+          "width": 1220,
+          "height": 494.296875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px 670px"
+        },
+        ".story>div:first-child": {
+          "left": 740,
+          "top": 1307.765625,
+          "width": 473.140625,
+          "height": 149.4375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child": {
+          "left": 1299.53125,
+          "top": 1307.765625,
+          "width": 520.46875,
+          "height": 254.09375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story h2": {
+          "left": 740,
+          "top": 1307.765625,
+          "width": 473.140625,
+          "height": 77.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 72px / 77.76px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".story .section-lead": {
+          "left": 740,
+          "top": 1401.515625,
+          "width": 457.265625,
+          "height": 37.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 29px / 37.7px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".story>div:last-child>p:first-child": {
+          "left": 1299.53125,
+          "top": 1307.765625,
+          "width": 520.46875,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".story>div:last-child>p:last-child": {
+          "left": 1299.53125,
+          "top": 1430.140625,
+          "width": 520.46875,
+          "height": 131.71875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        },
+        ".kitchen>div": {
+          "left": 740,
+          "top": 1705.859375,
+          "width": 1080,
+          "height": 201.40625,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen h2": {
+          "left": 740,
+          "top": 1705.859375,
+          "width": 473.140625,
+          "height": 77.75,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "700 72px / 77.76px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 16px"
+        },
+        ".kitchen .section-lead": {
+          "left": 740,
+          "top": 1799.609375,
+          "width": 457.265625,
+          "height": 37.6875,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "italic 29px / 37.7px \"Cormorant Garamond\", Georgia, serif",
+          "margin": "0px 0px 18px"
+        },
+        ".kitchen-copy>p:first-child": {
+          "left": 1299.53125,
+          "top": 1705.859375,
+          "width": 520.46875,
+          "height": 79.03125,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "0px"
+        },
+        ".kitchen-copy>p:last-child": {
+          "left": 1299.53125,
+          "top": 1801.890625,
+          "width": 520.46875,
+          "height": 105.375,
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "font": "17px / 26.35px Manrope, system-ui, sans-serif",
+          "margin": "17px 0px 0px"
+        }
+      },
+      "invalidEncoding": false
+    }
+  ],
+  "mobileDifferences": []
+}
