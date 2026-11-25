@@ -421,6 +421,26 @@ html.scrolled header.fixed-name h1 i{
 .header-message-text{display:inline-block}
 html.has-header-message .title-space{height:calc(64px + var(--header-message-height,0px))!important}
 html.has-header-message{scroll-padding-top:calc(80px + var(--header-message-height,0px))!important}
+@media(min-width:721px){
+  html.has-header-message header.fixed-name{
+    display:grid!important;
+    grid-template-columns:max-content minmax(0,1fr) max-content;
+  }
+  html.has-header-message header.fixed-name h1{grid-column:1;grid-row:1}
+  html.has-header-message #header-estado{grid-column:3;grid-row:1}
+  .header-message{
+    position:static;
+    grid-column:2;
+    grid-row:1;
+    min-width:0;
+    min-height:0;
+    padding:0;
+    border:0;
+    background:none;
+    color:#43291e;
+    line-height:1.3;
+  }
+}
 @media(max-width:720px){
   .header-message{min-height:64px;padding:14px 16px}
   .header-message-text{width:max-content;white-space:nowrap}
