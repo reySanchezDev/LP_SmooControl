@@ -2,46 +2,55 @@
   {
     "name": "cacao.webp",
     "src": "/img/cacao.webp",
-    "label": "Cacao"
+    "label": "Cacao",
+    "productLabel": "Refresco de cacao"
   },
   {
     "name": "cerdo-asado-mesa.webp",
     "src": "/img/cerdo-asado-mesa.webp",
-    "label": "Cerdo Asado Mesa"
+    "label": "Cerdo Asado Mesa",
+    "productLabel": "Cerdo asado"
   },
   {
     "name": "enchilada-mesa.webp",
     "src": "/img/enchilada-mesa.webp",
-    "label": "Enchilada Mesa"
+    "label": "Enchilada Mesa",
+    "productLabel": "Enchilada"
   },
   {
     "name": "enchilada.webp",
     "src": "/img/enchilada.webp",
-    "label": "Enchilada"
+    "label": "Enchilada",
+    "productLabel": "Enchilada"
   },
   {
     "name": "fachada.webp",
     "src": "/img/fachada.webp",
-    "label": "Fachada"
+    "label": "Fachada",
+    "productLabel": "Fachada"
   },
   {
     "name": "nachos-mesa.webp",
     "src": "/img/nachos-mesa.webp",
-    "label": "Nachos Mesa"
+    "label": "Nachos Mesa",
+    "productLabel": "Nachos"
   },
   {
     "name": "nachos.webp",
     "src": "/img/nachos.webp",
-    "label": "Nachos"
+    "label": "Nachos",
+    "productLabel": "Nachos"
   },
   {
     "name": "tacos-mesa.webp",
     "src": "/img/tacos-mesa.webp",
-    "label": "Tacos Mesa"
+    "label": "Tacos Mesa",
+    "productLabel": "Tacos"
   },
   {
     "name": "tacos.webp",
     "src": "/img/tacos.webp",
-    "label": "Tacos"
+    "label": "Tacos",
+    "productLabel": "Tacos"
   }
 ]
