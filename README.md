@@ -1,5 +1,11 @@
 # Astro Starter Kit: Basics
 
+## Imágenes y nombres de productos
+
+Antes de subir imágenes, consulta la [guía del carrusel](docs/carrusel-imagenes.md).
+Incluye las reglas para nombrar archivos, generar automáticamente la etiqueta del
+producto y configurar nombres personalizados con tildes en `public/img-labels.json`.
+
 ```sh
 npm create astro@latest -- --template basics
 ```
