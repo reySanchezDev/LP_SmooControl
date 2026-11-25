@@ -6,6 +6,13 @@ Antes de subir imágenes, consulta la [guía del carrusel](docs/carrusel-imagene
 Incluye las reglas para nombrar archivos, generar automáticamente la etiqueta del
 producto y configurar nombres personalizados con tildes en `public/img-labels.json`.
 
+## Mensajes temporales del header
+
+Consulta la [guía de mensajes programados](docs/mensajes-header.md) para publicar
+avisos con fecha de inicio y vencimiento. Se administran en
+`public/header-messages.json`, usando la hora de Nicaragua, y se retiran
+automáticamente al vencer.
+
 ```sh
 npm create astro@latest -- --template basics
 ```

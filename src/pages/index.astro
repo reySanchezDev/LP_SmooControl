@@ -67,6 +67,7 @@ footer .site-credit{justify-content:center;text-align:center}footer .site-credit
 <li class="social-item"><span class="social-badge social-facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.095 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.931-1.956 1.887v2.264h3.328l-.532 3.49h-2.796V24C19.612 23.095 24 18.1 24 12.073Z"/></svg></span><span>Facebook</span></li>
 <li class="social-item"><span class="social-badge social-whatsapp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" style="fill:none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.6 8.6 0 0 1-12.7 7.6L3 20.5l1.3-4.7a8.6 8.6 0 1 1 16.2-4.2Z"/><path d="m8.4 7.2 1.5 2.7-1 1.2c.8 1.7 2 2.9 3.8 3.6l1.1-1.2 2.7 1.4c-.3 2.6-2.5 2.2-4.3 1.4-2.9-1.3-5.3-3.9-5.6-6.5-.1-1.2.5-2.3 1.8-2.6Z"/></svg></span><span>WhatsApp</span></li>
 </ul></div></section></main><footer><div class="wrap site-credit"><a href="https://quantix.software" target="_blank" rel="noopener noreferrer">Sitio creado por <strong>quantix.software</strong></a></div></footer><script>
+import { initHeaderMessages } from '../scripts/header-messages.mjs';
 function syncTitle(){
   const root=document.documentElement;
   const title=document.querySelector('.fixed-name');
@@ -79,6 +80,7 @@ const touchIcon=document.createElement('link');touchIcon.rel='apple-touch-icon';
 syncTitle();window.addEventListener('scroll',syncTitle,{passive:true});window.addEventListener('pageshow',syncTitle);
 document.querySelector('.maplink')?.setAttribute('href','https://maps.app.goo.gl/2nkLaP2NGRNkeiRW9');
 const headerStatus=document.createElement('span');headerStatus.id='header-estado';headerStatus.setAttribute('role','status');document.querySelector('.fixed-name')?.append(headerStatus);
+initHeaderMessages();
 
 
 
@@ -396,6 +398,43 @@ html.scrolled header.fixed-name h1 i{
 }
 .product-tag svg{flex:0 0 auto;width:12px;height:12px;color:#d7b77b}
 .product-tag #product-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+</style>
+<style is:global>
+.header-message,.header-message *{box-sizing:border-box}
+.header-message{
+  position:absolute;
+  top:100%;
+  inset-inline:0;
+  display:grid;
+  align-items:center;
+  min-height:44px;
+  padding:10px 16px;
+  border-block:1px solid #c5aa76;
+  background:#234437;
+  color:#fff5dc;
+  font:600 15px/1.55 var(--font-body);
+  text-align:center;
+  pointer-events:auto;
+}
+.header-message[hidden]{display:none}
+.header-message-viewport{min-width:0;overflow:hidden}
+.header-message-text{display:inline-block}
+html.has-header-message .title-space{height:calc(64px + var(--header-message-height,0px))!important}
+html.has-header-message{scroll-padding-top:calc(80px + var(--header-message-height,0px))!important}
+@media(max-width:720px){
+  .header-message{min-height:64px;padding:14px 16px}
+  .header-message-text{width:max-content;white-space:nowrap}
+  .header-message.has-overflow .header-message-viewport{overflow-x:auto;scrollbar-width:none;text-align:left}
+  .header-message-viewport::-webkit-scrollbar{display:none}
+  @media(prefers-reduced-motion:no-preference){
+    .header-message.has-overflow .header-message-text{animation:header-message-pan var(--message-duration,20s) linear infinite alternate}
+    .header-message-viewport:is(:hover,:focus-visible) .header-message-text{animation-play-state:paused}
+    @keyframes header-message-pan{
+      0%,12%{transform:translateX(0)}
+      88%,100%{transform:translateX(var(--message-travel,0px))}
+    }
+  }
+}
 </style>
 <style is:global>
 /* Desktop distribution follows the current hensell.dev layout tokens. */
