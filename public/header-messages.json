@@ -1,0 +1,13 @@
+{
+  "timeZone": "America/Managua",
+  "messages": [
+    {
+      "id": "jasmine-nicaragua-2026-11-24",
+      "text": "¡Vamos, Jasmine! La Sazón de Sheyla está con vos. ¡Brillá, Nicaragua!",
+      "startsAt": "2026-11-24T00:00:00-06:00",
+      "endsAt": "2026-11-25T00:00:00-06:00",
+      "priority": 10,
+      "enabled": true
+    }
+  ]
+}
