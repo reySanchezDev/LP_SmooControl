@@ -36,6 +36,32 @@ El sistema genera automáticamente `public/img-manifest.json` durante `npm run d
 
 5. Vercel ejecutará el build y la imagen aparecerá automáticamente en el carrusel.
 
+## Nombre del producto debajo del carrusel
+
+La etiqueta se actualiza junto con cada fotografía. El build genera `productLabel` en
+`public/img-manifest.json`, usando el nombre del archivo sin extensión, cambiando
+guiones y guiones bajos por espacios y poniendo la primera letra en mayúscula.
+Por ejemplo, `tacos-al-pastor.webp` muestra **Tacos al pastor** automáticamente.
+
+Si necesitas una tilde, una presentación más corta o un nombre comercial, puedes
+añadir una excepción opcional en `public/img-labels.json`:
+
+```json
+{
+  "cacao.webp": "Refresco de cacao",
+  "cerdo-asado-mesa.webp": "Cerdo asado"
+}
+```
+
+La clave debe coincidir exactamente con el archivo. Las imágenes sin excepción
+siguen funcionando automáticamente; no hace falta enumerarlas todas. Los acentos
+deben estar en el nombre del archivo o en la excepción: el sistema no adivina
+nombres ni ingredientes a partir de la foto. La etiqueta no cambia los nombres
+existentes de la galería.
+
+Sube los archivos nuevos y, si la utilizaste, la excepción a GitHub. Vercel genera
+el manifiesto de nuevo durante el build; no edites `img-manifest.json` a mano.
+
 ## Quitar o reemplazar imágenes
 
 Elimina el archivo de `public/img/` y haz commit/push. Para reemplazar una imagen, conserva el nombre si quieres que la referencia sea estable; de lo contrario, usa un nuevo nombre descriptivo.
