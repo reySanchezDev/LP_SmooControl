@@ -80,13 +80,17 @@ Para quitar todos los mensajes, conserva el archivo y deja `"messages": []`.
   despliegue o el último válido recibido. Su fecha de fin se sigue respetando.
 - Un calendario remoto inválido se ignora. Los calendarios inválidos en el
   repositorio detienen `dev` y `build` antes de publicar.
-- En escritorio el texto aparece centrado. En móvil, la franja tiene más alto y
-  muestra una sola fila con desplazamiento suave cuando no cabe.
+- En escritorio el texto va dentro del header original de 64px, centrado entre
+  el nombre del restaurante y el horario. No crea una franja, fondo adicional ni
+  espacio debajo del header. Mantén los mensajes cortos para ese espacio central.
+- En móvil se conserva la franja inferior de mayor alto, con una sola fila y
+  desplazamiento suave cuando el texto no cabe.
 - Con movimiento reducido no hay desplazamiento automático: la fila permite
   desplazamiento horizontal manual. Al enfocar la franja también se pausa el
   movimiento. El texto completo permanece disponible para lectores de pantalla.
-- La altura real de la franja se mide para reservar su espacio bajo el header.
-  Al vencer, se retiran tanto el mensaje como ese espacio adicional.
+- Solo en móvil se mide la franja para reservar su espacio bajo el header.
+  Al vencer, se retiran tanto el mensaje como ese espacio adicional. En escritorio
+  la altura y el comienzo del contenido permanecen iguales con o sin mensaje.
 
 ## Validación y publicación
 

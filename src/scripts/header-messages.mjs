@@ -25,7 +25,8 @@ export function initHeaderMessages() {
   let refreshing = false;
 
   function measure() {
-    const height = banner.hidden ? 0 : banner.getBoundingClientRect().height;
+    // Only the mobile strip lives below the original 64px header.
+    const height = banner.hidden || !matchMedia('(max-width:720px)').matches ? 0 : banner.getBoundingClientRect().height;
     root.style.setProperty('--header-message-height', `${height}px`);
     const overflow = Math.max(0, text.scrollWidth - viewport.clientWidth);
     banner.classList.toggle('has-overflow', overflow > 1);
