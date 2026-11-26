@@ -106,20 +106,53 @@ cerrar.onclick=()=>viewer.close();prevPhoto.onclick=()=>showPhoto(current-1);nex
 
 
 const sectionMotion = new WeakMap();
+let observeRevealElements = () => {};
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {
       if (!entry.isIntersecting || reducedMotion.matches) continue;
       const element = entry.target;
       const fromBelow = entry.boundingClientRect.top > innerHeight / 2;
+      const delay = Number(element.dataset.revealDelay || 0);
       sectionMotion.get(element)?.cancel();
       sectionMotion.set(element, element.animate([
         { opacity: .45, transform: 'translateY(' + (fromBelow ? 22 : -22) + 'px)' },
         { opacity: 1, transform: 'translateY(0)' }
-      ], { duration: 520, easing: 'cubic-bezier(.2,.7,.2,1)' }));
+      ], { duration: 520, delay, easing: 'cubic-bezier(.2,.7,.2,1)' }));
     }
   }, { threshold: .12 });
-  document.querySelectorAll('.intro .art,.arrival h2,.maplink,.hours,.story>div,.kitchen>*,.albumtop,.photos button,.location .wrap,footer .wrap').forEach(element => observer.observe(element));
+  observeRevealElements = elements => {
+    [...elements].forEach((element, index) => {
+      if (element.matches('.photos button') && !element.dataset.revealDelay) {
+        element.dataset.revealDelay = String(index * 70);
+      }
+      observer.observe(element);
+    });
+  };
+  observeRevealElements(document.querySelectorAll('.intro .art,.arrival h2,.maplink,.hours,.story>div,.kitchen>*,.albumtop,.photos button,.location .wrap,footer .wrap'));
+}
+
+const heroArt = document.querySelector('.intro .art');
+let heroParallaxFrame = 0;
+function updateHeroParallax() {
+  heroParallaxFrame = 0;
+  if (!heroArt || reducedMotion.matches) {
+    heroArt?.style.removeProperty('--hero-plates-y');
+    heroArt?.style.removeProperty('--hero-ring-y');
+    return;
+  }
+  const offset = Math.max(-10, Math.min(14, -heroArt.getBoundingClientRect().top * .035));
+  heroArt.style.setProperty('--hero-plates-y', `${(offset * .72).toFixed(2)}px`);
+  heroArt.style.setProperty('--hero-ring-y', `${(offset * .42).toFixed(2)}px`);
+}
+if (heroArt) {
+  const scheduleHeroParallax = () => {
+    if (!heroParallaxFrame) heroParallaxFrame = requestAnimationFrame(updateHeroParallax);
+  };
+  window.addEventListener('scroll', scheduleHeroParallax, { passive: true });
+  window.addEventListener('resize', scheduleHeroParallax);
+  reducedMotion.addEventListener('change', scheduleHeroParallax);
+  scheduleHeroParallax();
 }
 document.addEventListener('click', event => {
   const control = event.target.closest('a,button,summary');
@@ -203,6 +236,7 @@ function renderManifestGallery(images){
     button.onclick=()=>{showManifestPhoto(index);viewer.showModal()};
     manifestPhotos.append(button);
   });
+  observeRevealElements(manifestPhotos.querySelectorAll('.photos button'));
 }
 function showManifestPhoto(index){
   if(!dynamicPhotos.length)return;
@@ -230,6 +264,18 @@ loadImageManifest();
 @media (max-width:1000px){.wrap{width:min(92%,760px)!important}.hero{grid-template-columns:1fr!important;min-height:auto!important;padding:42px 0 48px!important;gap:28px!important}.hero .art{width:min(100%,560px)!important;aspect-ratio:1.2!important;margin-inline:auto}.location .wrap{display:block!important}.story,.kitchen{grid-template-columns:1fr!important;gap:24px!important;padding:54px 0!important}.photos{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important;gap:12px!important}.photos button,.photos button:first-child{grid-column:auto!important;grid-row:auto!important;min-height:0!important;height:auto!important;aspect-ratio:1.35!important}.photos button:first-child{grid-column:1 / -1!important;aspect-ratio:2.15!important}.photos img{height:100%!important;width:100%!important;object-fit:cover!important}.album{padding:54px 0 60px!important}.albumtop{margin-bottom:20px!important}.album h2{font-size:clamp(42px,8vw,64px)!important}dialog{width:min(92vw,700px)!important;max-height:86vh!important}dialog img{height:min(54vh,420px)!important;max-height:54vh!important}}
 @media (max-width:720px){.wrap{width:calc(100% - 32px)!important}.hero .art{width:min(100%,430px)!important;aspect-ratio:1.5!important}.photos{gap:10px!important}.photos button,.photos button:first-child{aspect-ratio:1.22!important}.photos button:first-child{aspect-ratio:1.7!important}.photos span{font-size:16px!important;padding:24px 9px 8px!important}.album{padding:44px 0 52px!important}.albumtop{display:block!important}}
 @media (max-width:430px){.photos button,.photos button:first-child{aspect-ratio:1.12!important}.photos button:first-child{aspect-ratio:1.55!important}.photos span{font-size:14px!important}}
+</style>
+
+<style is:global>
+  /* Subtle hero parallax: the carousel keeps its own transitions while its
+     decorative layers respond gently to scroll. */
+  .intro .ring {
+    transform: translate3d(0, var(--hero-ring-y, 0px), 0) rotate(-14deg);
+  }
+
+  .intro .plates {
+    transform: translate3d(0, var(--hero-plates-y, 0px), 0);
+  }
 </style>
 <style is:global>
 /* Dynamic slides do not receive Astro's scoped attributes, so keep their carousel state global. */
