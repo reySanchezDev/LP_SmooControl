@@ -72,6 +72,14 @@
 .social-intro.play .intro-emoji{animation-delay:var(--delay)}
 #open-tiktok{float:right;color:inherit;text-decoration:none}
 </style>
+<style>
+.social-intro.play{animation:social-float-group 5.5s ease-in-out infinite alternate}
+@keyframes social-float-group{from{translate:0 0}to{translate:0 -8px}}
+.showcase.section-entered{animation:social-section-enter .62s cubic-bezier(.2,.7,.2,1) both}
+@keyframes social-section-enter{from{opacity:.45;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.profile-action{margin: auto 14px 14px}
+@media(prefers-reduced-motion:reduce){.social-intro.play{animation:none}}
+</style>
 <section class="showcase" aria-labelledby="social-title"><div class="composition"><div><h1 id="social-title">La sazón<br><em>se comparte.</em></h1><p>Asomate a nuestra cocina, seguí las novedades o escribinos para hacer tu pedido.</p><div class="actions" aria-label="Vista previa por canal">
 <button type="button" data-channel="wa" aria-pressed="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3.2 20.8l1.2-4.3a8.7 8.7 0 1 1 3.2 3.1z"/><path fill="currentColor" d="M8.2 6.8c.5-.2 1.1-.1 1.3.4l.9 2c.2.4-.4 1-.8 1.4.5 1.4 1.9 2.7 3.4 3.2.4-.5.9-1.2 1.3-1l2.1 1c.6.2.4 1.1 0 1.6-.5.8-1.4 1.2-2.3 1-3.4-.6-6.2-3-7.2-6.2-.4-1.2.1-2.8 1.3-3.4z"/></svg> WhatsApp <small>Hacé tu pedido</small></button>
 <button type="button" data-channel="tt" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.6 2h-3.3v13.6a2.75 2.75 0 1 1-2.75-2.75c.32 0 .62.05.91.15V9.6a6.12 6.12 0 1 0 5.14 6.04V8.75a8 8 0 0 0 4.65 1.48V6.9A4.65 4.65 0 0 1 16.6 2z"/></svg> TikTok <small>Mirá la cocina</small></button>
@@ -99,10 +107,20 @@ const order=document.getElementById('order-view');
 const network=document.getElementById('network-name');
 const follow=document.querySelector('.follow');
 const tap=document.querySelector('.tap');
-const motion=document.querySelector('.motion');
 const phone=document.querySelector('.phone');
 const intro=document.querySelector('.social-intro');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+document.querySelector('.motion')?.remove();
+document.getElementById('social-title').innerHTML='Porque el buen <em>sazón se comparte.</em>';
+const showcase=document.querySelector('.showcase');
+if(showcase && !reducedMotion.matches && 'IntersectionObserver' in window){
+  const sectionEntry=new IntersectionObserver(([entry],observer)=>{
+    if(!entry.isIntersecting)return;
+    showcase.classList.add('section-entered');
+    observer.disconnect();
+  },{threshold:.12});
+  sectionEntry.observe(showcase);
+}
 let inView=false;
 let automatic=true;
 let next=0;
@@ -119,7 +137,7 @@ function select(button){
   tap.classList.remove('demo');
   order.classList.remove('chat-running');
   if(profile.hidden){
-    if(!reducedMotion.matches && motion.getAttribute('aria-pressed')!=='true'){
+    if(!reducedMotion.matches){
       void order.offsetWidth;
       order.classList.add('chat-running');
     }
@@ -129,7 +147,7 @@ function select(button){
   network.textContent=selected==='fb'?'Facebook':'TikTok';
   document.getElementById('open-tiktok').hidden=selected!=='tt';
   setFollow(false);
-  if(!reducedMotion.matches && motion.getAttribute('aria-pressed')!=='true'){
+  if(!reducedMotion.matches){
     void tap.offsetWidth;
     tap.classList.add('demo');
   }
@@ -141,8 +159,7 @@ function stop(){
 }
 function cycle(delay){
   stop();
-  if(!automatic || !inView || document.hidden || reducedMotion.matches ||
-     motion.getAttribute('aria-pressed')==='true') return;
+  if(!automatic || !inView || document.hidden || reducedMotion.matches) return;
   timer=setTimeout(()=>{
     const button=channels[next];
     button.classList.add('tapping');
@@ -155,14 +172,13 @@ function cycle(delay){
 }
 tap.addEventListener('animationend',()=>setFollow(true));
 follow.addEventListener('click',()=>{
-  automatic=false;
-  stop();
   setFollow(follow.getAttribute('aria-pressed')!=='true');
 });
 for(const button of channels) button.addEventListener('click',()=>{
-  automatic=false;
   stop();
   select(button);
+  next=(channels.indexOf(button)+1)%channels.length;
+  cycle(3700);
 });
 new IntersectionObserver(([entry])=>{
   inView=entry.isIntersecting;
@@ -171,7 +187,7 @@ new IntersectionObserver(([entry])=>{
 },{threshold:.35}).observe(phone);
 document.addEventListener('visibilitychange',()=>cycle(450));
 reducedMotion.addEventListener('change',()=>cycle(450));
-motion.addEventListener('click',()=>{
+document.querySelector('.motion')?.addEventListener('click',()=>{
   const paused=motion.getAttribute('aria-pressed')!=='true';
   motion.setAttribute('aria-pressed',String(paused));
   document.querySelector('.showcase').classList.toggle('paused',paused);
