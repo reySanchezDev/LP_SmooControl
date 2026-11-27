@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="535 190 930 683" role="img" aria-labelledby="map-title map-desc">
+      <title id="map-title">La Sazón de Sheyla frente al Parque Central de Nindirí</title>
+      <desc id="map-desc">Calles y cruces del centro de Nindirí, redibujados a partir de la captura de Google Maps. La animación entra por la Calle Central Este y baja por el costado oeste del Parque Central.</desc>
+  <style>
+    .route{stroke-dasharray:100;animation:draw-route 2.35s ease-in-out both}
+    .destination{animation:show-stop .42s 2s ease-out both}
+    @keyframes draw-route{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+    @keyframes show-stop{from{opacity:0}to{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.route,.destination{animation:none}}
+  </style>
+
+      <defs>
+        <path id="streets" d="
+          M490 119 669 214 840 310
+          M671 160 657 420 644 833 634 900
+          M821 165 843 310 858 474 847 641 822 827 808 900
+          M1010 160 998 263
+          M1167 158 1177 266 1195 645 1215 817 1220 900
+          M1351 170 1359 264 1378 722 1368 832 1367 900
+          M839 263 1465 265
+          M490 415 657 420 854 428
+          M858 474 1040 496Q1060 495 1081 510L1378 722 1477 787
+          M1040 496 1026 644 1015 822 1006 900
+          M490 637 644 639 847 641 1026 644 1195 645 1275 648
+          M490 834 644 831 822 826 1015 822 1215 815 1368 829 1475 812"/>
+      </defs>
+      
+      <path d="M852 273 1167 276 1173 365 1063 367 1059 486 866 465Z" fill="#bdcba6" fill-opacity=".68"/>
+      <path d="M1018 309 1118 308 1117 353 1095 353 1095 361 1018 361Z" fill="#f6ebd4" stroke="#aeb798" stroke-width="2"/>
+      <use href="#streets" fill="none" stroke="#352d20" stroke-opacity=".55" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+      <use href="#streets" fill="none" stroke="#fff5df" stroke-opacity=".79" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#fff6df" font-family="system-ui" font-weight="600" font-size="21" paint-order="stroke" stroke="#201c13" stroke-width="5" stroke-linejoin="round">
+        <text x="886" y="251">Calle Central Este</text>
+        <text x="874" y="521" transform="rotate(6 874 521)">1ra. Calle Suroeste</text>
+        <text x="1085" y="677">2da. Calle Sureste</text>
+        <text x="1086" y="535" transform="rotate(35 1086 535)">Diag. Sureste de Nindirí</text>
+      </g>
+      <g fill="#f9f1d8" paint-order="stroke" stroke="#242c20" stroke-width="5" stroke-linejoin="round" font-family="system-ui" text-anchor="middle">
+        <text x="961" y="384" font-size="29" font-weight="680">Parque Central</text>
+        <text x="1070" y="299" font-size="19" font-weight="650">Parroquia Santa Ana</text>
+      </g>
+      <path class="route route-halo" pathLength="100" d="M1418 265 1177 264 1000 264 839 263 843 310 854 428 857 461" fill="none" stroke="#fff2d6" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+      <path class="route" pathLength="100" d="M1418 265 1177 264 1000 264 839 263 843 310 854 428 857 461" fill="none" stroke="#28543e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <g class="stop start"><circle cx="1418" cy="265" r="11" fill="#28543e" stroke="#fff7e5" stroke-width="4"/></g>
+      <g class="stop destination">
+        <circle cx="829" cy="461" r="26" fill="#a4473333"/>
+        <path d="M829 465c-7-8-19-20-19-32a19 19 0 1 1 38 0c0 12-12 24-19 32Z" fill="#a44733" stroke="#fff7e5" stroke-width="3"/>
+        <circle cx="829" cy="433" r="6" fill="#fff7e5"/>
+        <rect x="548" y="447" width="256" height="50" rx="8" fill="#254b38"/>
+        <text x="676" y="479" text-anchor="middle" fill="#fff5de" font-size="25" font-family="Georgia">La Sazón de Sheyla</text>
+      </g>
+    </svg>
