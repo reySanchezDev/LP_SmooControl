@@ -37,11 +37,10 @@ a,button,summary{touch-action:manipulation;transition:scale .2s,box-shadow .25s,
 main section h2.section-title{font-family:Georgia,serif;font-size:clamp(38px,5.2vw,72px);font-weight:700;line-height:1.08;letter-spacing:-.045em;margin:0 0 16px;text-wrap:balance}
 main section .section-lead{font:italic clamp(21px,2vw,29px)/1.3 Georgia,serif;max-width:36ch;margin:0 0 18px}
 .arrival .actions .delivery{position:relative;isolation:isolate;overflow:hidden;gap:10px;border:1px solid #c5aa76;box-shadow:0 4px 14px #17271e42}
-.delivery svg,.delivery span{z-index:1}.delivery::after{content:"";position:absolute;inset:-50% auto -50% -45%;width:38%;background:linear-gradient(105deg,transparent,#f7deb839,transparent);transform:skewX(-16deg);pointer-events:none}
+.delivery svg,.delivery span{z-index:1}
 @media(prefers-reduced-motion:no-preference){
-.delivery.invite{animation:invite-lift 2.8s ease-in-out infinite}.delivery.invite::after{animation:invite-light 2.8s ease-in-out infinite}
+.delivery.invite{animation:invite-lift 2.8s ease-in-out infinite}
 @keyframes invite-lift{0%,58%,100%{translate:0 0}28%{translate:0 -5px;box-shadow:0 8px 22px #17271e65}}
-@keyframes invite-light{0%{left:-45%}52%,100%{left:115%}}
 .delivery:is(:hover,:focus-visible) svg{transform:rotate(-7deg)}.delivery svg{transition:transform .2s}
 }
 .kitchen{display:block;border-top:0}.kitchen>div{max-width:68ch;margin-inline:auto}.kitchen p{max-width:inherit}.intro,#historia,.kitchen{position:relative;isolation:isolate}
@@ -613,4 +612,59 @@ html.has-header-message{scroll-padding-top:calc(80px + var(--header-message-heig
   .wrap{width:calc(100% - 32px)!important;max-width:none!important}
   .intro.wrap{width:100%!important;max-width:none!important}
 }
+
+@media (min-width:721px){
+  /* Extend only the section backgrounds while preserving their centering. */
+  .location,
+  .album{
+    width:calc(min(var(--hensell-shell-max),calc(100% - (2 * var(--hensell-gutter)))) + 2px)!important;
+    max-width:calc(var(--hensell-shell-max) + 2px)!important;
+    margin-inline:auto!important;
+  }
+}
+
+</style>
+
+<style is:global>
+  /* Keep the editable brand artwork visible as a quiet wallpaper behind all sections. */
+  body {
+    isolation: isolate;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: url('/Fondo.svg') center / cover no-repeat;
+    opacity: 1;
+    --wallpaper-gutter: max(0px, calc((100% - min(1220px, 89%)) / 2));
+    -webkit-mask-image: linear-gradient(
+      to right,
+      #000 0,
+      #000 var(--wallpaper-gutter),
+      transparent var(--wallpaper-gutter),
+      transparent calc(100% - var(--wallpaper-gutter)),
+      #000 calc(100% - var(--wallpaper-gutter)),
+      #000 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      #000 0,
+      #000 var(--wallpaper-gutter),
+      transparent var(--wallpaper-gutter),
+      transparent calc(100% - var(--wallpaper-gutter)),
+      #000 calc(100% - var(--wallpaper-gutter)),
+      #000 100%
+    );
+  }
+
+  @media (max-width: 720px) {
+    body::before {
+      --wallpaper-gutter: 0px;
+    }
+  }
+
 </style>
