@@ -460,6 +460,8 @@ loadImageManifest();
   }
 </style>
 <style is:global>
+.maplink .animated-map{transform:scale(1.08);transform-origin:center}
+.maplink span{position:relative;z-index:1}
 /* Dynamic slides do not receive Astro's scoped attributes, so keep their carousel state global. */
 .plates .presentation{position:absolute;inset:0;visibility:hidden;opacity:0;transform:translateX(-4%);transition:opacity .52s ease,transform .7s ease,visibility 0s .7s}
 .plates .presentation.on{visibility:visible;opacity:1;transform:none;transition-delay:0s}
