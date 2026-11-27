@@ -109,6 +109,10 @@ const follow=document.querySelector('.follow');
 const tap=document.querySelector('.tap');
 const phone=document.querySelector('.phone');
 const intro=document.querySelector('.social-intro');
+const socialLinks={
+  wa:'https://wa.me/50577765119',
+  tt:'https://www.tiktok.com/@sazonsheyla?is_from_webapp=1&sender_device=pc'
+};
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 document.querySelector('.motion')?.remove();
 document.getElementById('social-title').innerHTML='Porque el buen <em>sazón se comparte.</em>';
@@ -172,13 +176,18 @@ function cycle(delay){
 }
 tap.addEventListener('animationend',()=>setFollow(true));
 follow.addEventListener('click',()=>{
+  const selected=channels.find(button=>button.getAttribute('aria-pressed')==='true');
   setFollow(follow.getAttribute('aria-pressed')!=='true');
+  const url=selected && socialLinks[selected.dataset.channel];
+  if(url) window.open(url,'_blank','noopener,noreferrer');
 });
 for(const button of channels) button.addEventListener('click',()=>{
   stop();
   select(button);
   next=(channels.indexOf(button)+1)%channels.length;
   cycle(3700);
+  const url=socialLinks[button.dataset.channel];
+  if(url) window.open(url,'_blank','noopener,noreferrer');
 });
 new IntersectionObserver(([entry])=>{
   inView=entry.isIntersecting;
